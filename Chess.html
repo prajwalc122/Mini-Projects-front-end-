@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chess Academy</title>
+
+<style>
+
+/* =====================
+   Reset
+===================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* =====================
+   Header
+===================== */
+
+header{
+    background:#1e1e1e;
+    border-bottom:1px solid #444;
+    position:fixed;
+    width:100%;
+    top:0;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    color:#f4c542;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:white;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    color:#ccc;
+    text-decoration:none;
+}
+
+.nav-links a:hover{
+    color:#f4c542;
+}
+
+/* =====================
+   Hero
+===================== */
+
+.hero{
+    padding:170px 20px 100px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#f4c542;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    color:#bbb;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#f4c542;
+    color:black;
+    text-decoration:none;
+    padding:12px 30px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#ddb22f;
+}
+
+/* =====================
+   Cards
+===================== */
+
+.modules{
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1d1d1d;
+    border:1px solid #333;
+    padding:25px;
+    border-radius:10px;
+}
+
+.card:hover{
+    border-color:#f4c542;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#bbb;
+    margin-bottom:20px;
+}
+
+.card a{
+    color:#f4c542;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* =====================
+   Footer
+===================== */
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #333;
+    margin-top:60px;
+    color:#aaa;
+}
+
+/* =====================
+   Responsive
+===================== */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+}
+
+.nav-links{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.nav-links li{
+    margin:10px;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="container navbar">
+
+<div class="logo">
+♔ Chess<span>Academy</span>
+</div>
+
+<ul class="nav-links">
+<li><a href="#">Home</a></li>
+<li><a href="#">History</a></li>
+<li><a href="#">Board</a></li>
+<li><a href="#">Rules</a></li>
+<li><a href="#">Openings</a></li>
+<li><a href="#">Tactics</a></li>
+<li><a href="#">Quiz</a></li>
+</ul>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="container">
+
+<h1>Become a <span>Chess Master</span></h1>
+
+<p>
+Learn everything about chess—from the history of the game to advanced tactics and strategies. Perfect for beginners and intermediate players.
+</p>
+
+<a href="#" class="btn">Start Learning</a>
+
+</div>
+
+</section>
+
+<section class="modules">
+
+<div class="container">
+
+<h2 class="section-title">Course Modules</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Chess History</h3>
+<p>Learn how chess evolved from Chaturanga into the modern game.</p>
+<a href="#">Read More →</a>
+</div>
+
+<div class="card">
+<h3>Board Setup</h3>
+<p>Understand files, ranks, diagonals and proper board arrangement.</p>
+<a href="#">Read More →</a>
+</div>
+
+<div class="card">
+<h3>Opening Principles</h3>
+<p>Learn development, center control and king safety.</p>
+<a href="#">Read More →</a>
+</div>
+
+<div class="card">
+<h3>Tactical Patterns</h3>
+<p>Master forks, pins, skewers, discovered attacks and more.</p>
+<a href="#">Read More →</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Chess Academy | Learn Chess Step by Step</p>
+
+</footer>
+
+</body>
+</html>
